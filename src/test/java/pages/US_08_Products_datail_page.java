@@ -16,4 +16,14 @@ public class US_08_Products_datail_page {
     @FindBy(xpath = "//*[@id='header']/div/div/div/div[2]/div/ul/li[2]/a/text()")
     public WebElement products_button;
 
+    @FindBy(xpath = "//img[@alt='Website for automation practice']")
+    public WebElement automationExerciseWebelement;
+
+    @FindBy(xpath = "(//*[text()='View Product'])[1]")
+    public WebElement viewButton;
+
+    //Automation Exercise - All Products
+
+    //Automation Exercise - Product Details
+
 }

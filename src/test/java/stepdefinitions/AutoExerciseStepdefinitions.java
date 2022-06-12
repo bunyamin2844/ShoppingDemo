@@ -14,7 +14,7 @@ public class AutoExerciseStepdefinitions {
 
     @Given("Navigate to url {string}")
     public void navigateToUrlHttpAutomationexerciseCom(String Url) {
-        Driver.getDriver().get(ConfigReader.getProperty("AutomationExercise"));
+        Driver.getDriver().get(ConfigReader.getProperty(autoExercisePage));
     }
 
     @Then("Verify that home page is visible successfully")
@@ -42,6 +42,7 @@ public class AutoExerciseStepdefinitions {
     }
     @Then("Click {string} button")
     public void click_button(String login) {
+
         autoExercisePage.loginWebelement.click();
     }
 

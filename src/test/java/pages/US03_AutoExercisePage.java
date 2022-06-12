@@ -7,7 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class US03_AutoExercisePage {
    public US03_AutoExercisePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+
+       PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(xpath = "//img[@alt='Website for automation practice']")
