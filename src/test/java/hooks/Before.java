@@ -1,4 +1,4 @@
-package Hooks;
+package hooks;
 
 public class Before {
 
