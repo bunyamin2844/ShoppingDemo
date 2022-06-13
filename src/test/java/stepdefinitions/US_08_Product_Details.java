@@ -1,7 +1,9 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.US_08_Products_datail_page;
 import utilities.ConfigReader;
@@ -10,22 +12,24 @@ import utilities.Driver;
 public class US_08_Product_Details {
     US_08_Products_datail_page pg = new US_08_Products_datail_page();
 
-    @Given("Launch browser")
-    public void launch_browser() {
 
 
+
+    @When("Navigate to url {string}.")
+    public void navigateToUrl(String url) {
+        Driver.getDriver().get(url);
     }
 
-    @Then("Click on Products button")
-    public void click_on_products_button() {
-
-
-
+    @Then("Verify that home page is visible successfully")
+    public void verifyThatHomePageIsVisibleSuccessfully() {
     }
 
     @Then("Verify user is navigated to ALL PRODUCTS page successfully")
     public void verify_user_is_navigated_to_all_products_page_successfully() {
 
+    }
+    @And("Click on Products button")
+    public void clickOnProductsButton() {
     }
 
     @Then("The products list is visible")

@@ -1,9 +1,9 @@
 Feature: Product details
-
+@us08
   Scenario: Product Details
 
-  Given Launch browser
-  When Navigate to url 'http://automationexercise.com'
+  #Given Launch browser
+  When Navigate to url "http://automationexercise.com".
   Then Verify that home page is visible successfully
   And Click on Products button
   Then Verify user is navigated to ALL PRODUCTS page successfully
