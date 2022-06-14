@@ -14,7 +14,7 @@ public class AutoExerciseStepdefinitions {
 
     @Given("Navigate to url {string}")
     public void navigateToUrlHttpAutomationexerciseCom(String Url) {
-        Driver.getDriver().get(ConfigReader.getProperty(autoExercisePage));
+        Driver.getDriver().get(ConfigReader.getProperty(Url));
     }
 
     @Then("Verify that home page is visible successfully")
