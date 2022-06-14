@@ -1,8 +1,9 @@
+@us03
 Feature: US03 Auto Exercise
  Scenario: TC-01 Negative Test
 
 
-   Given  Navigate to url http://automationexercise.com
+   Given  Navigate to url
    Then Verify that home page is visible successfully
    Then Click on 'Signup / Login' button
    Then Verify 'Login to your account' is visible
