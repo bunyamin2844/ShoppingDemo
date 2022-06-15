@@ -1,2 +1,11 @@
 .idea
 *.iml
+target
+.DS_Store
+test-output
+
+
+pom.xml
+
+testdata
+.gitignore

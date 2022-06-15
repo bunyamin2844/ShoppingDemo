@@ -10,10 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class US08_Productdetails {
-
-    public US08_Productdetails(){
+      public  US08_Productdetails(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
+
 
     @FindBy(xpath = "//*[@id='header']/div/div/div/div[1]/div/a/img")
     public WebElement homePage;

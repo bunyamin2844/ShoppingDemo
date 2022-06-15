@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.US03_AutoExercisePage;
+import pages.ProductionPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
@@ -19,13 +19,13 @@ import utilities.Driver;
 
 public class Hooks {
     WebDriver driver;
-    US03_AutoExercisePage autoExercisePage;
+    ProductionPage autoExercisePage;
     @Before()
     public void commonSteps(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         Driver.getDriver().get(ConfigurationReader.getProperty("login_url"));
-        autoExercisePage= new US03_AutoExercisePage();
+        autoExercisePage= new ProductionPage();
         Assert.assertTrue(autoExercisePage.automationExerciseWebelement.isDisplayed());
     }
         @After

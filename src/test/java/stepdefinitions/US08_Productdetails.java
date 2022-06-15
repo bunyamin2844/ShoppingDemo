@@ -3,13 +3,16 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Test;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class US_08_ProductsDetailSteps {
+public class US08_Productdetails {
 
-    US_08_ProductsDetailSteps page;
+    US08_Productdetails page =new US08_Productdetails();
 
+
+    @Test
     @Given("Launch browser")
     public void launch_browser() {
 
@@ -19,9 +22,15 @@ public class US_08_ProductsDetailSteps {
         Driver.getDriver().get(ConfigurationReader.getProperty("login_url"));
 
     }
+    @Then("Verify that home page is visible successfully")
+    public void verifyThatHomePageIsVisibleSuccessfully() {
+    Driver.waitAndClick(page.);
+
+    }
     @Then("Click on Products button")
     public void click_on_products_button() {
-        Driver.waitAndClick(page.);
+
+
 
 
     }
@@ -45,6 +54,7 @@ public class US_08_ProductsDetailSteps {
     public void verify_that_detail_detail_is_visible_product_name_category_price_availability_condition_brand() {
 
     }
+
 
 
 }
