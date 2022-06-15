@@ -1,4 +1,3 @@
-@us03
 Feature: US03 Auto Exercise
  Scenario: TC-01 Negative Test
 
