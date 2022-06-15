@@ -8,6 +8,7 @@ import utilities.Driver;
 public class US07_TestCasesPage {
 
     public US07_TestCasesPage() {
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
