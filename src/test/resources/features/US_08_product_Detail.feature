@@ -1,8 +1,9 @@
 Feature: Product details
 
   Scenario: Product Details
+
   Given Launch browser
-  When Navigate to url "http://automationexercise.com"
+  When Navigate to url
   Then Verify that home page is visible successfully
   And Click on Products button
   Then Verify user is navigated to ALL PRODUCTS page successfully

@@ -3,10 +3,12 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utilities.ConfigurationReader;
+import utilities.Driver;
 
 public class US_08_ProductsDetailSteps {
 
-    US_08_ProductsDetailSteps page= new US_08_ProductsDetailSteps();
+    US_08_ProductsDetailSteps page;
 
     @Given("Launch browser")
     public void launch_browser() {
@@ -14,10 +16,13 @@ public class US_08_ProductsDetailSteps {
     }
     @When("Navigate to url {string}")
     public void navigate_to_url(String string) {
+        Driver.getDriver().get(ConfigurationReader.getProperty("login_url"));
 
     }
     @Then("Click on Products button")
     public void click_on_products_button() {
+        Driver.waitAndClick(page.);
+
 
     }
     @Then("Verify user is navigated to ALL PRODUCTS page successfully")
@@ -40,5 +45,6 @@ public class US_08_ProductsDetailSteps {
     public void verify_that_detail_detail_is_visible_product_name_category_price_availability_condition_brand() {
 
     }
+
 
 }
