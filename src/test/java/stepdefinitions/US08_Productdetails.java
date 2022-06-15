@@ -24,7 +24,7 @@ public class US08_Productdetails {
     }
     @Then("Verify that home page is visible successfully")
     public void verifyThatHomePageIsVisibleSuccessfully() {
-    Driver.waitAndClick(page.);
+
 
     }
     @Then("Click on Products button")
